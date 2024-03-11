@@ -15,21 +15,21 @@ function SignupForm() {
         <form onSubmit={formik.handleSubmit} className='signup-form-container'>
             <div className='signup-form-images-container'>
                 <div className='signup-form-image-container'>
-                    <label htmlFor="name">Name</label>
+                    <label htmlFor="name">front</label>
                     <input
                         id="name"
                         name="name"
-                        type="text"
+                        type="file"
                         onChange={formik.handleChange}
                         value={formik.values.email}
                     />
                 </div>
                 <div className='signup-form-image-container'>
-                    <label htmlFor="member-id">Member ID</label>
+                    <label htmlFor="member-id">back</label>
                     <input
                         id="member-id"
                         name="member-id"
-                        type="text"
+                        type="file"
                         onChange={formik.handleChange}
                         value={formik.values.email}
                     />
@@ -37,21 +37,23 @@ function SignupForm() {
             </div>
             <div className='signup-form-details-container'>
                 <div className='left-container'>
-                    <label htmlFor="name">Name</label>
+                    <label htmlFor="name" className='left-input-container'>Name</label>
                     <input
                         id="name"
                         name="name"
                         type="text"
                         onChange={formik.handleChange}
                         value={formik.values.email}
+                        className='input-container'
                     />
-                    <label htmlFor="member-id">Member ID</label>
+                    <label htmlFor="member-id" className='left-input-container'>Member ID</label>
                     <input
                         id="member-id"
                         name="member-id"
                         type="text"
                         onChange={formik.handleChange}
                         value={formik.values.email}
+                        className='input-container'
                     />
                 </div>
                 <div className='right-container'>
@@ -63,6 +65,7 @@ function SignupForm() {
                             type="text"
                             onChange={formik.handleChange}
                             value={formik.values.email}
+                            className='input-container'
                         />
                     </div>
                     <div className='right-input-container'>
@@ -73,6 +76,7 @@ function SignupForm() {
                             type="text"
                             onChange={formik.handleChange}
                             value={formik.values.email}
+                            className='input-container'
                         />
                     </div>
                     <div className='right-input-container'>
@@ -83,11 +87,14 @@ function SignupForm() {
                             type="text"
                             onChange={formik.handleChange}
                             value={formik.values.email}
+                            className='input-container'
                         />
                     </div>
                 </div>
             </div>
-            <button type="submit" className='signup-form-confirmation-container'>Confirm</button>
+            <div className='signup-form-confirmation-container'>
+                <button type="submit" className='signup-form-confirmation-button'>Confirm</button>
+            </div>
         </form>
     )
 }

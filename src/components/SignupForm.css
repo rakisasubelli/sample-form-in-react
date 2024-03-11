@@ -8,6 +8,7 @@
     margin: 2rem;
     border-radius: 2rem;
     box-sizing: content-box;
+    font-family: Arial, Helvetica, sans-serif;
   }
   .signup-form-images-container {
     display: flex;
@@ -35,17 +36,23 @@
   }
 
   .signup-form-confirmation-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  .signup-form-confirmation-button {
     border: solid black;
     border-radius: 2rem;
     box-sizing: content-box;
     width: max-content;
-    padding: 8px;
-    display: flex;
-    justify-self: end;
+    padding: 1rem 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
   }
 
   .signup-form-details-container {
-    height:  42vh;
+    height:  auto;
     border: solid black;
     margin: 2rem;
     border-radius: 2rem;
@@ -65,7 +72,7 @@
   .right-container {
     display: flex;
     flex-direction: column;
-    padding-top: 2rem;
+    padding-top: 1rem;
     flex-basis: 1;
   }
 
@@ -74,10 +81,17 @@
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
+    margin: 1rem;
+  }
+  .left-input-container {
+    line-height: 2rem;
+    margin-bottom: 1rem;
+    
   }
 
-  .signup-form-container > *:last-child{
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+  .input-container {
+    line-height: 2rem;
+    margin-bottom: 1rem;
+    border: solid black;
+    border-radius: 2rem;
   }
